@@ -1,6 +1,7 @@
 These source codes are used to verify the theoretically obtained results on AES by working on a small scale AES. These results are published in our paper at SAC 2020 with the title "Weak-Key Distinguishers for AES".
 
 Weak-Key Subspace Trails and Applications to AES
+
 ------- EXPERIMENTS using Small-Scale AES -------
 
 Our simplified C implementation is provided in "small_aes.c" file. This implementation can be run both on Linux and Windows (Visual Studio). "small_aes.h" library only contains the matrix multiplication and its inverse as arrays which can be used to speed up the experiments. Decryption operation uses the provided array but for this reference implementation encryption operation uses a normal implementation of matrix multiplication.
@@ -23,22 +24,41 @@ Our full code which provides many other functionalities is provided in "small_ae
 
 
 -------------- Example Output ---------------------
+
 (1) Small AES Invariant Subspace - Encryption Experiment
+
 (2) Small AES Invariant Subspace - Encryption Experiment (128-bit key)
+
 (3) Small AES Invariant Subspace - Decryption Experiment
+
 (4) Small AES Invariant Subspace - Decryption Experiment (128-bit key)
+
 Choice: 3
+
 Number of rounds: 5
+
 (0) 357a357a357a357a
+
 (1) f903f903f903f903
+
 (2) 0
+
 (3) 5555555555555555
+
 (4) Enter manually
+
 Select key: 4
+
 Enter key (e.g. 0123456789abcdef): e666e666e666e666
+
 Selected key is: e666e666e666e666
+
 Diagonal 1: 140735340871680
+
 Diagonal 2: 140735340871680
+
 Diagonal 3: 140735340871680
+
 Diagonal 4: 140735340871680
+
 Time: 827 seconds
